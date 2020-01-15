@@ -7,18 +7,18 @@ echo 'Please select your Ubuntu Version.'
 read -p "x=Xenial LTS and Linux Mint 18, b=Bionic, d=Disco, e=Eoan: " version
 if [ $version == "x" ];
 then
-  bash "Xenial.sh"
+  bash "scripts/Xenial.sh"
 fi
 if [ $version == "b" ]
 then
-  bash "Bionic.sh"
+  bash "scripts/Bionic.sh"
 fi
 if [ $version == "d" ]
 then
-  bash "Disco.sh"
+  bash "scripts/Disco.sh"
 fi
 if [ $version == "e" ]
 then
-  bash "Eoan.sh"
+  bash "scripts/Eoan.sh"
 fi
 exit
