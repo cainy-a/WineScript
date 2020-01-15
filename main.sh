@@ -1,6 +1,10 @@
+if (( $EUID != 0 )); then
+  echo "Please run as root"
+  exit
+fi
 echo 'Welcome to the Ubuntu Wine Auto Installer by Cain Atkinson,'
 echo 'Please select your Ubuntu Version.'
-read -p "x=Xenial, b=Bionic, d=Disco, e=Eoan: " version
+read -p "x=Xenial LTS and Linux Mint 18, b=Bionic, d=Disco, e=Eoan: " version
 if [ $version == "x" ];
 then
   bash "Xenial.sh"
