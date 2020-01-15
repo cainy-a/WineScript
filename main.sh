@@ -1,18 +1,19 @@
 echo 'Welcome to the Ubuntu Wine Auto Installer by Cain Atkinson,'
 echo 'Please select your Ubuntu Version.'
 read -p "x=Xenial, b=Bionic, d=Disco, e=Eoan: " version
-if [$version == "x"];
+if [ $version == "x" ];
 then
   bash "Xenial.sh"
-if [$version == "b"]
+fi
+if [ $version == "b" ]
 then
   bash "Bionic.sh"
 fi
-if [$version == "d"]
+if [ $version == "d" ]
 then
   bash "Disco.sh"
 fi
-if [$version == "e"]
+if [ $version == "e" ]
 then
   bash "Eoan.sh"
 fi
