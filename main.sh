@@ -3,15 +3,17 @@ echo 'Please select your Ubuntu Version.'
 read -p "x=Xenial, b=Bionic, d=Disco, e=Eoan: " version
 if [$version == "x"];
 then
-  ./Xenial.sh
-  exit
+  bash "Xenial.sh"
 if [$version == "b"]
 then
-  ./Bionic.sh
-  exit
+  bash "Bionic.sh"
+fi
 if [$version == "d"]
 then
-  ./Disco.sh
-  exit
+  bash "Disco.sh"
+fi
 if [$version == "e"]
-t
+then
+  bash "Eoan.sh"
+fi
+exit
